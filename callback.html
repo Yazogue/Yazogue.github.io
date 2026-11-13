@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TikTok sign-in</title>
+<style>body{margin:0;background:#0d0d14;color:#eee;font:17px/1.6 system-ui,sans-serif}
+main{max-width:720px;margin:auto;padding:32px 16px}code{display:block;word-break:break-all;
+background:#000;padding:12px;border-radius:8px;margin:12px 0}</style></head>
+<body><main>
+<h1>TikTok sign-in</h1>
+<p id="msg">Reading the authorisation code…</p>
+<code id="code"></code>
+<p>Copy this code into the tool on your computer to finish signing in. It expires in a few minutes.</p>
+<script>
+const p = new URLSearchParams(location.search);
+const msg = document.getElementById('msg'), box = document.getElementById('code');
+if (p.get('code')) { msg.textContent = 'Authorisation code:'; box.textContent = p.get('code'); }
+else { msg.textContent = 'No code received: ' + (p.get('error_description') || p.get('error') || 'unknown error'); box.remove(); }
+</script>
+</main></body></html>
