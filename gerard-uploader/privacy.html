@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gerard Uploader - Confidentialité</title>
+<style>
+  body { margin: 0; font: 17px/1.6 system-ui, sans-serif; background: #f6f4ef; color: #222; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 20px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  h2 { font-size: 20px; margin-top: 28px; }
+  a { color: #b4541a; }
+  footer { margin-top: 40px; font-size: 14px; color: #666; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Règles de confidentialité</h1>
+  <p>Ces règles s'appliquent à l'application Gerard Uploader, un outil personnel qui publie
+  des vidéos sur les chaînes YouTube de son propriétaire.</p>
+
+  <h2>Données utilisées</h2>
+  <p>L'application accède, avec l'autorisation du propriétaire, à ses propres chaînes YouTube
+  via l'API YouTube Data v3, pour envoyer des vidéos et lire leurs statistiques (vues, mentions
+  « J'aime », nombre d'abonnés). Elle ne collecte aucune donnée sur d'autres personnes, ni sur
+  les spectateurs des vidéos.</p>
+
+  <h2>Stockage</h2>
+  <p>Le jeton d'autorisation est conservé uniquement sur l'appareil du propriétaire (un
+  Raspberry Pi), dans un fichier lisible par lui seul. Aucune donnée n'est vendue, partagée ou
+  transmise à un tiers, en dehors des appels à l'API de Google nécessaires au fonctionnement.</p>
+
+  <h2>Révocation</h2>
+  <p>L'accès peut être retiré à tout moment depuis la page
+  <a href="https://myaccount.google.com/permissions">Applications tierces ayant accès à votre
+  compte</a> de Google.</p>
+
+  <h2>Utilisation des données Google</h2>
+  <p>L'utilisation des informations reçues des API Google respecte le
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Règlement sur les
+  données utilisateur des services API Google</a>, y compris les exigences d'utilisation
+  limitée. Les services YouTube sont soumis aux
+  <a href="https://www.youtube.com/t/terms">Conditions d'utilisation de YouTube</a> et aux
+  <a href="https://policies.google.com/privacy">Règles de confidentialité de Google</a>.</p>
+
+  <h2>English summary</h2>
+  <p>Gerard Uploader only accesses its owner's own YouTube channels, through the YouTube Data
+  API v3, to upload videos and read their statistics. It collects no data about anyone else.
+  The authorization token stays on the owner's device and is never shared or sold. Access can
+  be revoked at any time at <a href="https://myaccount.google.com/permissions">Google account
+  permissions</a>. Use of information received from Google APIs adheres to the Google API
+  Services User Data Policy, including the Limited Use requirements.</p>
+  <p><a href="index.html">Accueil</a></p>
+  <footer>Dernière mise à jour : 18 novembre 2026</footer>
+</main>
+</body>
+</html>
